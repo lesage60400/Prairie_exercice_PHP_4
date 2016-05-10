@@ -7,14 +7,14 @@
     $min = 1;
     $max = 100;
       for ($i = $min; $i <= $max; $i = $i + 1) {
-      if ($i%3 ==0){
+        if ($i%3 == 0and $i%5 == 0){
+          echo "fizzbuzz";
+        }
+        elseif ($i%3 ==0){
         echo "fizz";
       }
       elseif ($i%5 == 0){
         echo "buzz";
-      }
-      elseif ($i%3 == 0and $i%5 == 0){
-        echo "fizzbuzz";
       }
       else{
         echo $i;
